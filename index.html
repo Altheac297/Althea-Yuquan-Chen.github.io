@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yuquan Chen - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
-    header { background: #e9ecef; color: #212529; padding: 40px 20px; text-align: center; }
-    .profile-photo { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 3px solid #fff; }
-    header h1 { margin-bottom: 10px; font-weight: bold; }
-    section { margin: 40px 0; }
-    h2 { border-bottom: 2px solid #0d6efd; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.5rem; }
-    .contact { font-size: 1rem; color: #212529; }
-    .contact a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
-    .contact a:hover { color: #0d6efd; }
-    .item { margin-bottom: 20px; }
-    footer { background: #f8f9fa; padding: 20px; text-align: center; font-size: 0.9rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuquan Chen - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
+        header { background: #ffffff; color: #212529; padding: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; }
+        .header-content { display: flex; align-items: center; justify-content: space-around; width: 100%; max-width: 960px; }
+        .header-text { text-align: left; }
+        header h1 { margin-bottom: 10px; font-weight: bold; }
+        .profile-photo { width: 200px; height: 200px; object-fit: cover; margin-right: 20px; border-radius: 0; box-shadow: none; }
+        section { margin: 40px 0; }
+        h2 { border-bottom: 2px solid #0d6efd; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.5rem; }
+        .contact { font-size: 1rem; color: #212529; }
+        .contact a { color: inherit; text-decoration: none; transition: color 0.3s ease;}
+        .contact a:hover { color: #0d6efd; }
+        .item { margin-bottom: 20px; }
+        footer { background: #f8f9fa; padding: 20px; text-align: center; font-size: 0.9rem; }
+
+        @media (min-width: 768px) {
+            header { flex-direction: row; justify-content: space-around; }
+            .profile-photo { margin-bottom: 0; }
+            .header-text { text-align: left; }
+        }
+    </style>
 </head>
+  
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="https://althea-yuquan-chen.github.io/photo.jpg" alt="Althea Yuquan Chen Profile Photo" class="profile-photo">
-    <h1>Althea (Yuquan) Chen</h1>
-    <p class="contact">📞 +1 412-475-6091 | ✉️ <a href="mailto:yuquanch@andrew.cmu.edu">yuquanch@andrew.cmu.edu</a></p>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <!-- Your profile photo with a larger size -->
+            <img src="https://althea-yuquan-chen.github.io/photo.jpg" alt="Althea Yuquan Chen Profile Photo" class="profile-photo">
+            
+            <div class="header-text">
+                <h1>Althea (Yuquan) Chen</h1>
+                <p class="contact">📞 +1 412-475-6091 | ✉️ <a href="mailto:yuquanch@andrew.cmu.edu">yuquanch@andrew.cmu.edu</a></p>
+            </div>
+        </div>
+    </header>
 
   <main class="container">
 
